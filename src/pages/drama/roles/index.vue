@@ -217,7 +217,7 @@
 <script>
 import roles from './roles.js'
 export default {
-  name: 'page1',
+  name: 'roles',
   data () {
     return {
       persons: roles.persons
