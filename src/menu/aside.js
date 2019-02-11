@@ -24,7 +24,8 @@ export default [
     icon: 'folder-o',
     children: [
       { path: '/drama/roles', title: '人物扮演' },
-      { path: '/drama/list', title: '剧本详情' }
+      { path: '/drama/list', title: '剧本详情' },
+      { path: '/drama/photo', title: '剧本照片' }
     ]
   }
 ]

@@ -18,12 +18,17 @@ import router from './router'
 import menuHeader from '@/menu/header'
 import menuAside from '@/menu/aside'
 import { frameInRoutes } from '@/router/routes'
+// IView UI
 import IView from 'iview';
 import 'iview/dist/styles/iview.css'
+// 图片组件
+import 'viewerjs/dist/viewer.css'
+import Viewer from 'v-viewer'
 
 // 核心插件
 Vue.use(d2Admin)
 Vue.use(IView)
+Vue.use(Viewer)
 
 new Vue({
   router,
