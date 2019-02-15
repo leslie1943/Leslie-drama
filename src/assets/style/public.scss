@@ -9,6 +9,14 @@ $prefix: d2;
   cursor: pointer;
 }
 
+// 定义表头颜色
+.el-table th {
+  // background: #3682D0;
+  background: rgb(14, 114, 134);
+  color: whitesmoke;
+  opacity: 0.7;
+}
+
 // 填满父元素
 // 组要父元素 position: relative | absolute;
 %full {

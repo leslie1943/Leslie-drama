@@ -10,11 +10,22 @@ module.exports = {
   devServer: {
     publicPath: baseUrl // 和 baseUrl 保持一致
   },
+  configureWebpack: config => {
+    if (process.env.NODE_ENV === 'production') {
+      // 为生产环境修改配置..
+      console.info('I am in production')
+    } else {
+      // 为开发环境修改配置..
+      console.info('I am in development')
+    }
+  },
   // 默认设置: https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-service/lib/config/base.js
   chainWebpack: config => {
     // 解决 cli3 热更新失效 https://github.com/vuejs/vue-cli/issues/1559
-    config.resolve
-      .symlinks(true)
+    config.resolve.symlinks(true)
+
+    // config.module.rule 🚀🚀🚀 添加一个module 🚀🚀🚀
+
     // markdown
     config.module
       .rule('md')

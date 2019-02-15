@@ -23,7 +23,8 @@ export default [
     title: '剧本',
     icon: 'folder-o',
     children: [
-      { path: '/drama/roles', title: '人物扮演' },
+      { path: '/drama/cosplay', title: '角色扮演' },
+      // { path: '/drama/roles', title: '人物扮演' },
       { path: '/drama/list', title: '剧本详情' },
       { path: '/drama/photo', title: '剧本照片' }
     ]

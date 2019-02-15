@@ -151,3 +151,7 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+.drama-container {
+}
+</style>
