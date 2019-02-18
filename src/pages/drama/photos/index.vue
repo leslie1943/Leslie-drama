@@ -4,9 +4,10 @@
     <div class="drama-photo-container">
       <el-row>
         <viewer :images="[photos]" style="background-color:pink">
-          <el-col :span="6" v-for="(item,index) in photos" :key="index">
+          <el-col :span="4" v-for="(item,index) in photos" :key="index">
             <el-card :body-style="{ padding: '0px' }">
               <img :src="item" class="image">
+              <div style="textAlign:center;">{{index}}</div>
             </el-card>
           </el-col>
         </viewer>

@@ -35,19 +35,6 @@
           </template>
         </el-table-column>
 
-        <!-- <el-table-column label="剧照" header-align="center" align="center" width="200px">
-          <template slot-scope="scope">
-            <el-carousel :interval="2000" style="overflow:hidden;" type="card" arrow="never">
-              <el-carousel-item
-                v-for="(banner,index) in scope.row.photos"
-                :key="index"
-                style="text-align:center;width:100%;height:50px;overflow:hidden;"
-              >
-                <img class="img-center" @click="handlePreview" :src="banner.path">
-              </el-carousel-item>
-            </el-carousel>
-          </template>
-        </el-table-column>-->
         <el-table-column prop="copyright" label="独家" align="center" header-align="center">
           <template slot-scope="scope">
             <el-tag type="danger" v-if="scope.row.copyright">独家</el-tag>

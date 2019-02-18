@@ -19,17 +19,17 @@ import samantha_drama from './persons/samantha'
 
 export default {
     // 剧本
-    dramas: ['15.业火馆', '14.狼人之血', '13.校园灵异', '12.上海滩杀人', '11.皂罗袍', '10.大明青龙劫', '9.记忆碎片', '8.儿童劫', '7.苍笙九剑', '6.大胥秘史', '5.星座怪谈', '4.盖弥书院', '3.良辰吉日', '2.孽海疑云', '1.蛊魂铃'],
+    dramas: ['17.反光', '16.幽灵群岛', '15.业火馆', '14.狼人之血', '13.校园灵异', '12.上海滩杀人', '11.皂罗袍', '10.大明青龙劫', '9.记忆碎片', '8.儿童劫', '7.苍笙九剑', '6.大胥秘史', '5.星座怪谈', '4.盖弥书院', '3.良辰吉日', '2.孽海疑云', '1.蛊魂铃'],
     // 玩家
     persons: [
-        { id: 'Dong', name: '老板', avatar: dongdong },
-        { id: 'Justin', name: '郭磊', avatar: justin },
-        { id: 'Neo', name: '周游', avatar: neo },
-        { id: 'Ying', name: '颖姐', avatar: ying },
-        { id: 'Mark', name: '马克', avatar: mark },
-        { id: 'Dora', name: '雪莲', avatar: dora },
-        { id: 'Leslie', name: '苏震', avatar: leslie },
-        { id: 'Samantha', name: '慧莹', avatar: samantha }],
+        { id: 'Dong', name: '老板', avatar: dongdong, participant: '16/17' },
+        { id: 'Justin', name: '郭磊', avatar: justin, participant: '16/17' },
+        { id: 'Neo', name: '周游', avatar: neo, participant: '16/17' },
+        { id: 'Ying', name: '颖姐', avatar: ying, participant: '13/17' },
+        { id: 'Mark', name: '马克', avatar: mark, participant: '17/17' },
+        { id: 'Dora', name: '雪莲', avatar: dora, participant: '17/17' },
+        { id: 'Leslie', name: '苏震', avatar: leslie, participant: '16/17' },
+        { id: 'Samantha', name: '慧莹', avatar: samantha, participant: '7/17' }],
     // 列表数据
     results: {
         ...dongdong_drama,
