@@ -26,7 +26,9 @@ export default [
       { path: '/drama/cosplay', title: '角色扮演' },
       // { path: '/drama/roles', title: '人物扮演' },
       { path: '/drama/list', title: '剧本详情' },
-      { path: '/drama/photo', title: '剧本照片' }
+      { path: '/drama/photo', title: '剧本照片' },
+      { path: '/drama/toplay', title: '待玩剧本' },
+      { path: '/drama/murderer', title: '凶手统计' }
     ]
   }
 ]
