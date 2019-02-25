@@ -18,4 +18,6 @@ export default {
   '0-14': { name: '业火馆', type: 'host', cosName: '主持人', style: "background-color:black;color:white" },
   '0-15': { name: '幽灵群岛', type: 'host', cosName: '主持人', style: "background-color:black;color:white" },
   '0-16': { name: '反光', type: 'player', cosName: '罗善英', style: "background-color:#6F7377;color:pink" },
+  '0-17': { name: '南越王陵', type: 'player', cosName: '孔兴邦', style: "background-color:#3F956B;color:white" },
+  '0-18': { name: '坠入深渊', type: 'player', cosName: '梵高', style: "background-color:#0A55A3;color:white" },
 }

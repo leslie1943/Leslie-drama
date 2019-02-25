@@ -18,4 +18,6 @@ export default {
   '4-14': { name: '业火馆', type: 'player', cosName: '陆劲', style: "background-color:#E8C70A;color:#000000" },
   '4-15': { name: '幽灵群岛', type: 'player', cosName: '童木', style: "background-color:#A538B4;color:white" },
   '4-16': { name: '反光', type: 'player', cosName: '罗天养', style: "background-color:#6F7377;color:pink" },
+  '4-17': { name: '南越王陵', type: 'player', cosName: '陈夏', style: "background-color:#3F956B;color:white" },
+  '4-18': { name: '坠入深渊', type: 'player', cosName: '毕加索', style: "background-color:#0A55A3;color:white" },
 }

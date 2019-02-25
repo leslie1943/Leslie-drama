@@ -10,6 +10,11 @@ for (let i = 1; i < 27; i++) {
   array_imgs.push('fanguang_' + i + '.jpg');
 }
 
+// 南越王陵
+for (let i = 1; i < 17; i++) {
+  array_imgs.push('nanyuewangling_' + i + '.jpg');
+}
+
 const photos = []
 
 // () => import('@/pages/drama/roles')

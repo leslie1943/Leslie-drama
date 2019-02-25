@@ -18,4 +18,6 @@ export default {
   '3-14': { name: '业火馆', type: 'player', cosName: '白獠儿', style: "background-color:#E8C70A;color:#000000" },
   '3-15': { name: '幽灵群岛', type: 'player', cosName: '梓晴', style: "background-color:#A538B4;color:white" },
   '3-16': { name: '反光', type: 'player', cosName: '江雪', style: "background-color:#6F7377;color:pink" },
+  '3-17': { name: '南越王陵', type: 'player', cosName: '沈曼秋', style: "background-color:#3F956B;color:white" },
+  '3-18': { name: '坠入深渊', type: 'player', cosName: '奥吉弗', style: "background-color:#0A55A3;color:white" },
 }

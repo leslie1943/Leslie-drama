@@ -18,4 +18,6 @@ export default {
   '5-14': { name: '业火馆', type: 'player', cosName: '赵兮儿', style: "background-color:#E8C70A;color:#000000" },
   '5-15': { name: '幽灵群岛', type: 'player', cosName: '佳琪', style: "background-color:#A538B4;color:white" },
   '5-16': { name: '反光', type: 'host', cosName: '主持人', style: "background-color:black;color:white" },
+  '5-17': { name: '南越王陵', type: 'player', cosName: '南恩', style: "background-color:#3F956B;color:white" },
+  '5-18': { name: '坠入深渊', type: 'player', cosName: '达芬奇', style: "background-color:#0A55A3;color:white" },
 }

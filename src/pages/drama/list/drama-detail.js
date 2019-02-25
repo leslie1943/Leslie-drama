@@ -339,7 +339,7 @@ export default {
     // -------------------------- 上海滩杀人事件
     {
       name: "上海滩杀人事件", persons: 5, copyright: true, type: "xx",
-      host: "周游",
+      host: "Neo",
       roles: [
         { realName: "老板", cosName: "朱老板" },
         { realName: "郭磊", cosName: "卢记者" },
@@ -365,7 +365,7 @@ export default {
     // -------------------------- 校园灵异事件
     {
       name: "校园灵异事件", persons: 5, copyright: true, type: "xx",
-      host: "周游",
+      host: "Neo",
       roles: [
         { realName: "老板", cosName: "赵帅哥" },
         { realName: "郭磊", cosName: "王学习" },
@@ -392,7 +392,7 @@ export default {
     // -------------------------- 狼人之血
     {
       name: "狼人之血", persons: 7, copyright: true, type: "xx",
-      host: "马克",
+      host: "Mark",
       roles: [
         { realName: "老板", cosName: "神父-迈克尔" },
         { realName: "郭磊", cosName: "猎魔人-希罗" },
@@ -506,6 +506,66 @@ export default {
           { index: 5, desc: "江雪: 有一个凄凄惨惨戚戚的角色,二号酱油" },
           { index: 6, desc: "裴志虎: 一号海天酱油,对，那种晒满180天的那种." },
           { index: 7, desc: "马克: 老年人果然是幕后最大黑手.本次表演级别绝对影帝啊." },
+        ]
+      },
+    },
+    // -------------------------- 南越王陵
+    {
+      name: "南越王陵", persons: 7, copyright: true, type: "xx",
+      host: "Leslie",
+      roles: [
+        { realName: "老板", cosName: "孔兴邦" },
+        { realName: "郭磊", cosName: "蒙俊" },
+        { realName: "周游", cosName: "蒙杰" },
+        { realName: "颖姐", cosName: "沈曼秋" },
+        { realName: "雪莲", cosName: "南恩" },
+        { realName: "苏震", cosName: "主持人" },
+        { realName: "马克", cosName: "陈夏" },
+        { realName: "慧莹", cosName: "肖堇" },
+      ],
+      status: 2,
+      places: ["海帝乐园"],
+      ending: {
+        name: '南越王陵',
+        realMurder: "无",
+        voteMurder: "无",
+        detail: [
+          { index: 0, desc: "这个本的主持人需要背锅了." },
+          { index: 1, desc: "因降低难度导致了剧本的可玩性变得不太好." },
+          { index: 2, desc: "不得不说,在投票阶段,大家还是很准的." },
+          { index: 3, desc: "蒙杰(Neo)全程酱油,快赶上【反光】里的【电工-裴志虎】了." },
+          { index: 4, desc: "最大赢家是沈曼秋(颖姐),千亿资产,还能长生不老,羡慕！" },
+        ]
+      },
+    },
+    // -------------------------- 坠入深渊
+    {
+      name: "坠入深渊", persons: 7, copyright: true, type: "xx",
+      host: "Leslie",
+      roles: [
+        { realName: "老板", cosName: "梵高" },
+        // { realName: "郭磊", cosName: "蒙俊" },
+        { realName: "周游", cosName: "莫奈" },
+        { realName: "颖姐", cosName: "奥吉弗" },
+        { realName: "雪莲", cosName: "达芬奇" },
+        { realName: "苏震", cosName: "主持人" },
+        { realName: "马克", cosName: "毕加索" },
+        { realName: "慧莹", cosName: "达利" },
+        { realName: "吴与伦", cosName: "拉斐尔" },
+      ],
+      status: 2,
+      places: ["海帝乐园"],
+      ending: {
+        name: '坠入深渊',
+        realMurder: "达芬奇",
+        voteMurder: "毕加索，奥吉弗，莫奈",
+        detail: [
+          { index: 0, desc: "老板说的对,对于变格本,我们还是稍欠火候." },
+          { index: 1, desc: "这个本最要的是实景搜证环节，所以体验也不是很好." },
+          { index: 2, desc: "遗憾Justin同学缺席了此本." },
+          { index: 3, desc: "欢迎吴与伦同学." },
+          { index: 4, desc: "恭喜雪莲同学第一次抽到凶手" },
+          { index: 5, desc: "鉴于最后的投票结果，以后我们就玩本格本吧." },
         ]
       },
     }

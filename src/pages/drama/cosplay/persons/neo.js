@@ -18,4 +18,6 @@ export default {
   '2-14': { name: '业火馆', type: 'player', cosName: '吴又梵', style: "background-color:#E8C70A;color:#000000" },
   '2-15': { name: '幽灵群岛', type: 'player', cosName: '展宏😀', style: "background-color:#A538B4;color:white" },
   '2-16': { name: '反光', type: 'player', cosName: '冯义', style: "background-color:#6F7377;color:pink" },
+  '2-17': { name: '南越王陵', type: 'player', cosName: '蒙杰', style: "background-color:#3F956B;color:white" },
+  '2-18': { name: '坠入深渊', type: 'player', cosName: '莫奈', style: "background-color:#0A55A3;color:white" },
 }

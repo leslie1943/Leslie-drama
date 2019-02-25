@@ -14,13 +14,6 @@
             <el-row class="drama-murder-header">
               <el-col>
                 <p>
-                  <i class="el-icon-warning">孽岛疑云-凶手不详</i>
-                </p>
-              </el-col>
-            </el-row>
-            <el-row class="drama-murder-header">
-              <el-col>
-                <p>
                   <i class="el-icon-warning">幽灵群岛-文艺本,不在统计范围之内</i>
                 </p>
               </el-col>

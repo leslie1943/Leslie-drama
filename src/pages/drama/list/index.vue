@@ -81,8 +81,7 @@
           style="text-align:center;font-size:18px;font-weight:bold;color:gray;word-break: break-word;white-space: normal;"
         >结局</el-row>
 
-        <hr style="margin-bottom:20px;">
-
+        <!-- <hr style="margin-bottom:20px;"> -->
         <el-row
           style="word-break: break-word;white-space: normal;"
           v-for="(item,id) in currentRow.ending.detail"
@@ -139,6 +138,4 @@ export default {
 }
 </script>
 <style lang="scss">
-.drama-container {
-}
 </style>

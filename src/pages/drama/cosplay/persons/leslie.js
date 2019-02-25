@@ -18,4 +18,6 @@ export default {
   '6-14': { name: '业火馆', type: 'player', cosName: '冯越伦', style: "background-color:#E8C70A;color:#000000" },
   '6-15': { name: '幽灵群岛', type: 'player', cosName: '小故', style: "background-color:#A538B4;color:white" },
   '6-16': { name: '反光', type: 'player', cosName: '裴志虎', style: "background-color:#6F7377;color:pink" },
+  '6-17': { name: '南越王陵', type: 'host', cosName: '主持人', style: "background-color:black;color:white" },
+  '6-18': { name: '坠入深渊', type: 'host', cosName: '主持人', style: "background-color:black;color:white" },
 }

@@ -18,4 +18,6 @@ export default {
   '7-14': { name: '业火馆', type: 'player', cosName: '', style: "" },
   '7-15': { name: '幽灵群岛', type: 'player', cosName: '', style: "" },
   '7-16': { name: '反光', type: 'player', cosName: '', style: "" },
+  '7-17': { name: '南越王陵', type: 'player', cosName: '肖堇', style: "background-color:#3F956B;color:white" },
+  '7-18': { name: '坠入深渊', type: 'player', cosName: '达利', style: "background-color:#0A55A3;color:white" },
 }
