@@ -30,5 +30,12 @@ export default [
       { path: '/drama/toplay', title: '待玩剧本' },
       { path: '/drama/murderer', title: '凶手统计' }
     ]
+  },
+  {
+    title: '知识点',
+    icon: 'folder-o',
+    children: [
+      { path: '/points/filter', title: '过滤器' }
+    ]
   }
 ]

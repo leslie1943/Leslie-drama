@@ -24,6 +24,7 @@ import 'iview/dist/styles/iview.css'
 // 图片组件
 import 'viewerjs/dist/viewer.css'
 import Viewer from 'v-viewer'
+import '@/filters/index.js'
 
 // 核心插件
 Vue.use(d2Admin)
