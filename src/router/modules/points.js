@@ -10,7 +10,8 @@ export default {
   // meta.title是tab页的title
   children: (pre => [
     { path: 'filter', name: `${pre}filter`, component: () => import('@/pages/points/filters'), meta: { meta, title: '过滤器' } },
-    { path: 'maps', name: `${pre}maps`, component: () => import('@/pages/points/maps'), meta: { meta, title: '百度地图' } }
+    { path: 'maps', name: `${pre}maps`, component: () => import('@/pages/points/maps'), meta: { meta, title: '百度地图' } },
+    { path: 'table-bg', name: `${pre}table-bg`, component: () => import('@/pages/points/table-bg'), meta: { meta, title: '行选背景' } }
 
   ])('points-')
   // ('points-') 可修改为 ()

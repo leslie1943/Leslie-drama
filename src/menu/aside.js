@@ -21,22 +21,23 @@ export default [
   // },
   {
     title: '剧本',
-    icon: 'folder-o',
+    icon: 'file-video-o',
     children: [
-      { path: '/drama/cosplay', title: '角色扮演' },
+      { path: '/drama/cosplay', icon: 'user-secret', title: '角色扮演' },
       // { path: '/drama/roles', title: '人物扮演' },
-      { path: '/drama/list', title: '剧本详情' },
-      { path: '/drama/photo', title: '剧本照片' },
-      { path: '/drama/toplay', title: '待玩剧本' },
-      { path: '/drama/murderer', title: '凶手统计' }
+      { path: '/drama/list', icon: 'align-justify', title: '剧本详情' },
+      { path: '/drama/photo', icon: 'photo', title: '剧本照片' },
+      { path: '/drama/toplay', icon: 'bell', title: '待玩剧本' },
+      { path: '/drama/murderer', icon: 'bar-chart', title: '凶手统计' }
     ]
   },
   {
     title: '知识点',
-    icon: 'folder-o',
+    icon: 'rocket',
     children: [
-      { path: '/points/filter', title: '过滤器' },
-      { path: '/points/maps', title: '百度地图' }
+      { path: '/points/filter', icon: 'filter', title: '过滤器' },
+      { path: '/points/maps', icon: 'map-o', title: '百度地图' },
+      { path: '/points/table-bg', icon: 'table', title: '行选背景' }
     ]
   }
 ]
