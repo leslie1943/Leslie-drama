@@ -35,7 +35,8 @@ export default [
     title: '知识点',
     icon: 'folder-o',
     children: [
-      { path: '/points/filter', title: '过滤器' }
+      { path: '/points/filter', title: '过滤器' },
+      { path: '/points/maps', title: '百度地图' }
     ]
   }
 ]

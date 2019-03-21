@@ -12,7 +12,8 @@ import '@/mock'
 import i18n from './i18n'
 // 核心插件
 import d2Admin from '@/plugin/d2admin'
-
+// Map插件
+import BaiduMap from 'vue-baidu-map'
 // 菜单和路由设置
 import router from './router'
 import menuHeader from '@/menu/header'
@@ -30,6 +31,10 @@ import '@/filters/index.js'
 Vue.use(d2Admin)
 Vue.use(IView)
 Vue.use(Viewer)
+Vue.use(BaiduMap, {
+  // ak 是在百度地图开发者平台申请的密钥 详见 http://lbsyun.baidu.com/apiconsole/key */
+  ak: 't0B9AViBfnjqLwFubP8l7RlinAE8bv0u'
+})
 
 new Vue({
   router,

@@ -24,6 +24,7 @@ export default {
     }
   },
   mounted () {
+    // 获取全局filters
     this.filters = this.$root.$options.filters
     this.$message.warning('原始长度:' + this.endTime)
 
