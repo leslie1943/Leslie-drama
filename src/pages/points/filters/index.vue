@@ -19,16 +19,17 @@ export default {
   data () {
     return {
       createTime: '2019-12-12 12:12:12',
-      endTime: '2019-12-13 01:02:03'
+      endTime: '2019-12-13 01:02:03',
+      filters: {}
     }
   },
   mounted () {
-    let filters = this.$root.$options.filters
+    this.filters = this.$root.$options.filters
     this.$message.warning('原始长度:' + this.endTime)
 
     setTimeout(() => {
-      this.$message.success('处理之后:' + filters.dateSimple(this.endTime))
-    }, 1000)
+      this.$message.success('处理之后:' + this.filters.dateSimple(this.endTime))
+    }, 2000)
   }
 }
 </script>
