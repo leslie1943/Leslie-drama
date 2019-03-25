@@ -15,6 +15,11 @@ for (let i = 1; i < 17; i++) {
   array_imgs.push('nanyuewangling_' + i + '.jpg');
 }
 
+// 青衣怪谈
+for (let i = 1; i < 21; i++) {
+  array_imgs.push('qingyiguaitan_' + i + '.jpg');
+}
+
 const photos = []
 
 // () => import('@/pages/drama/roles')

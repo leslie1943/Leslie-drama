@@ -20,4 +20,6 @@ export default {
   '2-16': { name: '反光', type: 'player', cosName: '冯义', style: "background-color:#6F7377;color:pink" },
   '2-17': { name: '南越王陵', type: 'player', cosName: '蒙杰', style: "background-color:#3F956B;color:white" },
   '2-18': { name: '坠入深渊', type: 'player', cosName: '莫奈', style: "background-color:#0A55A3;color:white" },
+  '2-19': { name: '青衣怪谈', type: 'player', cosName: '龙泽三心', style: "background-color:#white;color:pink" },
+
 }

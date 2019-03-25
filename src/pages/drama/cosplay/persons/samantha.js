@@ -20,4 +20,6 @@ export default {
   '7-16': { name: '反光', type: 'player', cosName: '', style: "" },
   '7-17': { name: '南越王陵', type: 'player', cosName: '肖堇', style: "background-color:#3F956B;color:white" },
   '7-18': { name: '坠入深渊', type: 'player', cosName: '达利', style: "background-color:#0A55A3;color:white" },
+  '7-19': { name: '青衣怪谈', type: 'player', cosName: '侍童阿月', style: "background-color:#white;color:pink" },
+
 }

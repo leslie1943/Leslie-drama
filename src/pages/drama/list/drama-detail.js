@@ -1,5 +1,8 @@
 /* eslint-disable */
+import xianmu from './emoji/xianmu.png'
+
 export default {
+  emoji_xianmu: xianmu,
   previewDialogVisible: false,
   previewDialogImageUrl: "",
   dialogVisible: false,
@@ -566,6 +569,42 @@ export default {
           { index: 3, desc: "欢迎吴与伦同学." },
           { index: 4, desc: "恭喜雪莲同学第一次抽到凶手" },
           { index: 5, desc: "鉴于最后的投票结果，以后我们就玩本格本吧." },
+        ]
+      },
+    },
+    // -------------------------- 青衣怪谈
+    {
+      name: "青衣怪谈", persons: 6, copyright: true, type: "xx",
+      host: "Mark",
+      roles: [
+        // { realName: "老板", cosName: "梵高" },
+        { realName: "郭磊", cosName: "护卫松穹人" },
+        { realName: "周游", cosName: "龙泽三心" },
+        { realName: "颖姐", cosName: "妻子阿夷" },
+        { realName: "雪莲", cosName: "式神玉姬" },
+        { realName: "苏震", cosName: "法师梦参" },
+        { realName: "马克", cosName: "主持人" },
+        { realName: "慧莹", cosName: "侍童阿月" },
+      ],
+      status: 2,
+      places: ["海帝乐园"],
+      ending: {
+        name: '青衣怪谈',
+        realMurder: "侍童阿月",
+        voteMurder: "侍童阿月",
+        detail: [
+          { index: 0, desc: "老板不在，很遗憾,很遗憾，成都之旅很神秘，很神秘" },
+          { index: 1, desc: "此剧本充满了妖魔鬼怪和爱恨情仇." },
+          { index: 2, desc: "有的人只在乎自己的绝世容颜." },
+          { index: 3, desc: "有的人只在乎自己的原创歌曲." },
+          { index: 4, desc: "有的人只在乎自己被包裹的身躯." },
+          { index: 5, desc: "有的人只在乎自己的布偶娃娃." },
+          { index: 6, desc: "还好的是,抽烟的时间推出了凶手，意外意外" },
+          { index: 7, desc: "恭喜马克同学达成【咖啡西施💯】的成就，☕☕☕☕☕☕☕" },
+          { index: 8, desc: "楼下无线网络, Wifi: oneoneone Pwd: 159984492111 " },
+          { index: 9, desc: "楼上无线网络, Wifi: second Pwd: 159984492111 " },
+          { index: 10, style: 'important', desc: "差点漏了重要的一点，￥9000的咖啡机超超超超超超棒的👍👍👍👍👍" },
+          { index: 11, style: 'important', emoji: 'xianmu', desc: "感谢周游颖姐不远万里从巴厘岛带回来的冰箱贴和返魂香" },
         ]
       },
     }

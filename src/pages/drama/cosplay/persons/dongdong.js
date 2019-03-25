@@ -20,4 +20,5 @@ export default {
   '0-16': { name: '反光', type: 'player', cosName: '罗善英', style: "background-color:#6F7377;color:pink" },
   '0-17': { name: '南越王陵', type: 'player', cosName: '孔兴邦', style: "background-color:#3F956B;color:white" },
   '0-18': { name: '坠入深渊', type: 'player', cosName: '梵高', style: "background-color:#0A55A3;color:white" },
+  '0-19': { name: '青衣怪谈', type: 'player', cosName: '', style: "" },
 }

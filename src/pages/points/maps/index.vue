@@ -50,7 +50,7 @@ export default {
   data () {
     return {
       location: '大连',
-      keyword: ''
+      keyword: '海第'
     }
   },
   methods: {

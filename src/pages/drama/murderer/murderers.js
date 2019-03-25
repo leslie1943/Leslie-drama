@@ -19,7 +19,7 @@ export default {
         { id: 'Mark', name: '马克', avatar: mark, times: 2, inDrama: ['孽岛疑云', '大胥秘史'], style: 'background-color:#f78989;color:white' },
         { id: 'Dora', name: '雪莲', avatar: dora, times: 1, inDrama: ['坠入深渊'], style: 'background-color:#F99FE6;color:white' },
         { id: 'Leslie', name: '苏震', avatar: leslie, times: 5, inDrama: ['盖弥书院', '苍笙九剑', '儿童劫', '记忆碎片', '校园灵异事件'], style: 'background-color:#409EFF;color:white' },
-        { id: 'Samantha', name: '慧莹', avatar: samantha, times: 1, inDrama: ['儿童劫'], style: 'background-color:#D56CB0;color:white' }
+        { id: 'Samantha', name: '慧莹', avatar: samantha, times: 2, inDrama: ['儿童劫', '青衣怪谈'], style: 'background-color:#D56CB0;color:white' }
     ],
 
 }

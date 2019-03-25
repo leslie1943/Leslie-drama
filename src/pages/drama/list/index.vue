@@ -88,7 +88,14 @@
           :key="id"
         >
           <Icon type="md-albums"/>
-          {{item.desc}}
+          <span v-if="item.style=='important'" style="font-weight:bold;font-size:24px;">
+            {{item.desc}}
+            <span v-if="item.emoji == 'xianmu'">
+              <img style="height:50px;width:50px;" :src="emoji_xianmu">
+            </span>
+          </span>
+
+          <span v-else>{{item.desc}}</span>
         </el-row>
 
         <span slot="footer" class="dialog-footer">
@@ -109,6 +116,7 @@
 <script>
 
 import data from './drama-detail.js'
+
 export default {
   name: 'list',
   data () {

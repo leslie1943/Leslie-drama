@@ -20,4 +20,5 @@ export default {
   '5-16': { name: '反光', type: 'host', cosName: '主持人', style: "background-color:black;color:white" },
   '5-17': { name: '南越王陵', type: 'player', cosName: '南恩', style: "background-color:#3F956B;color:white" },
   '5-18': { name: '坠入深渊', type: 'player', cosName: '达芬奇', style: "background-color:#0A55A3;color:white" },
+  '5-19': { name: '青衣怪谈', type: 'player', cosName: '式神玉姬', style: "background-color:#white;color:pink" },
 }

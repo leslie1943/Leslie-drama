@@ -20,4 +20,5 @@ export default {
   '6-16': { name: '反光', type: 'player', cosName: '裴志虎', style: "background-color:#6F7377;color:pink" },
   '6-17': { name: '南越王陵', type: 'host', cosName: '主持人', style: "background-color:black;color:white" },
   '6-18': { name: '坠入深渊', type: 'host', cosName: '主持人', style: "background-color:black;color:white" },
+  '6-19': { name: '青衣怪谈', type: 'player', cosName: '梦参', style: "background-color:#white;color:pink" },
 }

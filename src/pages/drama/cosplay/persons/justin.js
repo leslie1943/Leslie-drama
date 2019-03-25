@@ -20,4 +20,5 @@ export default {
   '1-16': { name: '反光', type: 'player', cosName: '应梨儿😀', style: "background-color:#6F7377;color:pink" },
   '1-17': { name: '南越王陵', type: 'player', cosName: '蒙俊', style: "background-color:#3F956B;color:white" },
   '1-18': { name: '坠入深渊', type: 'player', cosName: '', style: "" },
+  '1-19': { name: '青衣怪谈', type: 'player', cosName: '松穹人', style: "background-color:#white;color:pink" },
 }

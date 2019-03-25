@@ -64,7 +64,7 @@ export default {
   methods: {
     getParticipant (r) {
       let t = r.split('/')
-      return t[0] / t[1] === 1 ? 'class-all' : (t[0] / t[1] > 0.5 ? 'more-than-half' : 'low-than-ave')
+      return t[0] / t[1] === 1 ? 'class-all' : (t[0] / t[1] >= 0.5 ? 'more-than-half' : 'low-than-ave')
     }
   }
 }
