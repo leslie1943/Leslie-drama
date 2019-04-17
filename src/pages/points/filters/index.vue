@@ -4,7 +4,8 @@
     <div>
       <el-row>
         <el-col :offset="6">
-          <h1>经过Filter处理的创建时间: {{createTime|dateSimple}}</h1>
+          <h1>未处理的时间: {{createTime}}</h1>
+          <h1>已处理的时间: {{createTime|yyyyMMDDHHmm}}</h1>
         </el-col>
       </el-row>
     </div>
@@ -24,13 +25,14 @@ export default {
     }
   },
   mounted () {
+    console.info(this.filters)
     // 获取全局filters
     this.filters = this.$root.$options.filters
     this.$message.warning('原始长度:' + this.endTime)
 
     setTimeout(() => {
-      this.$message.success('处理之后:' + this.filters.dateSimple(this.endTime))
-    }, 2000)
+      this.$message.success('处理之后:' + this.filters.yyyyMMDDHHmm(this.endTime))
+    }, 5000)
   }
 }
 </script>

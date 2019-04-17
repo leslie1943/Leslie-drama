@@ -62,6 +62,12 @@ export default {
         title: 'Tomorrow Night Blue (vsCode)',
         name: 'tomorrow-night-blue',
         preview: 'image/theme/tomorrow-night-blue/preview@2x.png'
+      },
+      {
+        title: 'Leslie loves',
+        name: 'Leslie',
+        backgroundImage: 'image/theme/star/bg.jpg',
+        preview: 'image/theme/tomorrow-night-blue/preview@2x.png'
       }
     ]
   },
