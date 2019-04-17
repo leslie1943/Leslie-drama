@@ -1,7 +1,10 @@
 <template>
-  <div>
-    <vue-editor useCustomImageHandler @imageAdded="handleImageAdded" v-model="editorContent"/>
-  </div>
+  <vue-editor
+    :disabled="readOnly"
+    useCustomImageHandler
+    @imageAdded="handleImageAdded"
+    v-model="editorContent"
+  />
 </template>
 
 <script>
@@ -11,10 +14,17 @@ import axios from 'axios'
 import { uuid as getUUId } from '@/utils'
 
 import domain from '../../../private/domain'
-console.info(domain)
 
 export default {
+  name: 'rich-text-editor',
   components: { VueEditor },
+  props: {
+    // readOnly 是否可编辑: false => 可编辑 | true => 不可编辑
+    readOnly: {
+      type: Boolean,
+      default: false
+    }
+  },
   data () {
     return {
       editorContent: ''

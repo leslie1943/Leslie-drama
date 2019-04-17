@@ -1,16 +1,18 @@
 <template>
   <d2-container class="rich-text-editor">
     <template slot="header"></template>
-    <rich-editor @content-change="editorContentChange"></rich-editor>
+    <div style="padding:20px;">
+      <rich-text-editor @content-change="editorContentChange"/>
+    </div>
     <template slot="footer"></template>
   </d2-container>
 </template>
 
 <script>
-import RichEditor from '@/components/rich-editor'
+import RichTextEditor from '@/components/rich-text-editor'
 export default {
-  name: 'rich-text',
-  components: { RichEditor },
+  name: 'rich-text-demo',
+  components: { RichTextEditor },
   data () {
     return {
     }
@@ -25,6 +27,7 @@ export default {
 }
 </script>
 <style lang="scss">
-// .rich-text-editor {
-// }
+.rich-text-editor {
+  padding: 30px;
+}
 </style>
