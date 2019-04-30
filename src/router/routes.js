@@ -1,6 +1,7 @@
 import demo from './modules/demo'
 import drama from './modules/drama'
 import points from './modules/points'
+import egg from './modules/egg'
 
 import layoutHeaderAside from '@/layout/header-aside'
 
@@ -52,7 +53,8 @@ const frameIn = [
   // 自定义路由
   demo,
   drama,
-  points
+  points,
+  egg
 ]
 
 /**

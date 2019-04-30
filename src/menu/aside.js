@@ -40,5 +40,12 @@ export default [
       { path: '/points/table-bg', icon: 'table', title: '行选背景' },
       { path: '/points/rich-text', icon: 'list', title: '富文本' }
     ]
+  },
+  {
+    title: 'EGG',
+    icon: 'arrows',
+    children: [
+      { path: '/egg/user', icon: 'filter', title: '用户列表' }
+    ]
   }
 ]

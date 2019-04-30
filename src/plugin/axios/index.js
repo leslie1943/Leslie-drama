@@ -2,16 +2,17 @@ import store from '@/store'
 import axios from 'axios'
 import { Message } from 'element-ui'
 import util from '@/libs/util'
+/* eslint-disable */
 
 // 创建一个错误
-function errorCreat (msg) {
+function errorCreat(msg) {
   const err = new Error(msg)
   errorLog(err)
   throw err
 }
 
 // 记录和显示错误
-function errorLog (err) {
+function errorLog(err) {
   // 添加到日志
   store.dispatch('d2admin/log/add', {
     type: 'error',
@@ -60,6 +61,8 @@ service.interceptors.request.use(
 // 响应拦截器
 service.interceptors.response.use(
   response => {
+    console.info('Response in axios object')
+    console.info(response)
     // dataAxios 是 axios 返回数据中的 data
     const dataAxios = response.data
     // 这个状态码是和后端约定的
