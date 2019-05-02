@@ -20,3 +20,24 @@ export function CreateUser(params) {
     data: params
   })
 }
+
+
+export function DeleteUser(params) {
+  // console.info('in api')
+  // console.info(params)
+  return request({
+    method: 'post',
+    url: '/user/deleteUser',
+    data: params
+  })
+}
+
+export function UpdateUser(params) {
+  // console.info('in api')
+  // console.info(params)
+  return request({
+    method: 'post',
+    url: '/user/updateUser',
+    data: params
+  })
+}
