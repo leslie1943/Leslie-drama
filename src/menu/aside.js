@@ -38,7 +38,8 @@ export default [
       { path: '/points/filter', icon: 'filter', title: '过滤器' },
       { path: '/points/maps', icon: 'map-o', title: '百度地图' },
       { path: '/points/table-bg', icon: 'table', title: '行选背景' },
-      { path: '/points/rich-text', icon: 'list', title: '富文本' }
+      { path: '/points/rich-text', icon: 'list', title: '富文本' },
+      { path: '/points/dynamic-array', icon: 'list', title: '动态数组' }
     ]
   },
   {

@@ -41,3 +41,11 @@ export function UpdateUser(params) {
     data: params
   })
 }
+
+export function LoginUser(params) {
+  return request({
+    method: 'get',
+    url: '/user/getLoginUser',
+    params: params
+  })
+}
