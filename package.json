@@ -19,7 +19,7 @@
     "babel-polyfill": "^6.26.0",
     "better-scroll": "^1.12.1",
     "dayjs": "^1.6.7",
-    "element-ui": "^2.4.4",
+    "element-ui": "^2.9.1",
     "flex.css": "^1.1.7",
     "fuse.js": "^3.2.1",
     "hotkeys-js": "^3.3.6",
@@ -34,7 +34,7 @@
     "screenfull": "^3.3.2",
     "ua-parser-js": "^0.7.18",
     "v-viewer": "^1.4.0",
-    "vue": "^2.5.17",
+    "vue": "^2.6.0",
     "vue-i18n": "^7.4.2",
     "vue-router": "^3.0.1",
     "vue2-editor": "^2.6.6",
@@ -56,7 +56,7 @@
     "svg-sprite-loader": "^3.8.0",
     "text-loader": "0.0.1",
     "vue-baidu-map": "^0.21.18",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.6.0"
   },
   "lint-staged": {
     "*.js": [

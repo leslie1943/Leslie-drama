@@ -39,8 +39,9 @@ export default [
       { path: '/points/maps', icon: 'map-o', title: '百度地图' },
       { path: '/points/table-bg', icon: 'table', title: '行选背景' },
       { path: '/points/rich-text', icon: 'list', title: '富文本' },
-      { path: '/points/dynamic-array', icon: 'list', title: '动态数组' },
-      { path: '/points/ck-editor', icon: 'list', title: 'CKEditor' }
+      { path: '/points/dynamic-array', icon: 'th-list', title: '动态数组' },
+      { path: '/points/ck-editor', icon: 'file-text-o', title: 'CKEditor' },
+      { path: '/points/component-core', icon: 'cogs', title: 'Vue组件核心' }
     ]
   },
   {
