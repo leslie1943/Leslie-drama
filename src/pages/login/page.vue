@@ -9,8 +9,14 @@
       <!-- 表单部分 -->
       <div class="form-group">
         <el-card>
-          <el-form ref="loginForm" label-position="top" :rules="rules" :model="formLogin" size="default">
-            <el-form-item  prop="username">
+          <el-form
+            ref="loginForm"
+            label-position="top"
+            :rules="rules"
+            :model="formLogin"
+            size="default"
+          >
+            <el-form-item prop="username">
               <el-input type="text" v-model="formLogin.username" placeholder="用户名">
                 <i slot="prepend" class="fa fa-user-circle-o"></i>
               </el-input>
@@ -33,14 +39,14 @@
         </el-card>
       </div>
       <!-- 快速登录按钮 -->
-      <el-button size="default" type="info" class="button-help" @click="dialogVisible = true">
-        快速选择用户（测试功能）
-      </el-button>
+      <el-button
+        size="default"
+        type="info"
+        class="button-help"
+        @click="dialogVisible = true"
+      >快速选择用户（测试功能）</el-button>
     </div>
-    <el-dialog
-      title="快速选择用户"
-      :visible.sync="dialogVisible"
-      width="400px">
+    <el-dialog title="快速选择用户" :visible.sync="dialogVisible" width="400px">
       <el-row :gutter="10" style="margin: -20px 0px -10px 0px;">
         <el-col v-for="(user, index) in users" :key="index" :span="8">
           <div class="user-btn" @click="handleUserBtnClick(user)">
@@ -59,7 +65,7 @@ require('particles.js')
 import config from './config/default'
 import { mapActions } from 'vuex'
 export default {
-  data () {
+  data() {
     return {
       // 快速选择用户
       dialogVisible: false,
@@ -100,11 +106,11 @@ export default {
       }
     }
   },
-  mounted () {
+  mounted() {
     // 初始化例子插件
     particlesJS('login', config)
   },
-  beforeDestroy () {
+  beforeDestroy() {
     // 销毁 particlesJS
     // thanks https://github.com/d2-projects/d2-admin/issues/65
     // ref https://github.com/VincentGarreau/particles.js/issues/63
@@ -121,7 +127,7 @@ export default {
      * @description 接收选择一个用户快速登录的事件
      * @param {Object} user 用户信息
      */
-    handleUserBtnClick (user) {
+    handleUserBtnClick(user) {
       this.formLogin.username = user.username
       this.formLogin.password = user.password
       this.submit()
@@ -130,7 +136,7 @@ export default {
      * @description 提交表单
      */
     // 提交登录信息
-    submit () {
+    submit() {
       this.$refs.loginForm.validate((valid) => {
         if (valid) {
           // 登录
@@ -141,6 +147,20 @@ export default {
             username: this.formLogin.username,
             password: this.formLogin.password
           })
+
+          // egg login
+          // let params = {
+          //   name: this.formLogin.username,
+          //   password: this.formLogin.password
+          // }
+          // this.$store.dispatch('egg/user/loginUser', params).then(res => {
+          //   if (res.success) {
+          //     this.$message.success('登录成功!')
+          //     this.$router.push('/index')
+          //   } else {
+          //     this.$message.error('登录失败,请检查账号和密码!')
+          //   }
+          // })
         } else {
           // 登录表单校验失败
           this.$message.error('表单校验失败')
@@ -152,5 +172,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import './style.scss';
+@import "./style.scss";
 </style>

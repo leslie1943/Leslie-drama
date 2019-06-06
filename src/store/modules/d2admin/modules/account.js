@@ -1,3 +1,4 @@
+/* eslint-disable */
 import util from '@/libs/util.js'
 import { AccountLogin } from '@/api/sys/login'
 
@@ -12,7 +13,7 @@ export default {
      * @param {Object} param password {String} 密码
      * @param {Object} param route {Object} 登录成功后定向的路由对象
      */
-    login ({ dispatch }, {
+    login({ dispatch }, {
       vm,
       username,
       password,
@@ -33,6 +34,7 @@ export default {
           // 如有必要 token 需要定时更新，默认保存一天
           util.cookies.set('uuid', res.uuid)
           util.cookies.set('token', res.token)
+          // util.cookies.set('roles',res.roles)
           // 设置 vuex 用户信息
           await dispatch('d2admin/user/set', {
             name: res.name
@@ -56,11 +58,11 @@ export default {
      * @param {Object} param vm {Object} vue 实例
      * @param {Object} param confirm {Boolean} 是否需要确认
      */
-    logout ({ commit }, { vm, confirm = false }) {
+    logout({ commit }, { vm, confirm = false }) {
       /**
        * @description 注销
        */
-      function logout () {
+      function logout() {
         // 删除cookie
         util.cookies.remove('token')
         util.cookies.remove('uuid')
@@ -93,7 +95,7 @@ export default {
      * @description 用户登录后从持久化数据加载一系列的设置
      * @param {Object} state vuex state
      */
-    load ({ commit, dispatch }) {
+    load({ commit, dispatch }) {
       return new Promise(async resolve => {
         // DB -> store 加载用户名
         await dispatch('d2admin/user/load', null, { root: true })

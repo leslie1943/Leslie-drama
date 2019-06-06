@@ -14,6 +14,9 @@ import i18n from './i18n'
 import d2Admin from '@/plugin/d2admin'
 // Map插件
 import BaiduMap from 'vue-baidu-map'
+// Editor 插件
+import CKEditor from '@ckeditor/ckeditor5-vue';
+
 // 菜单和路由设置
 import router from './router'
 import menuHeader from '@/menu/header'
@@ -35,6 +38,7 @@ Vue.use(BaiduMap, {
   // ak 是在百度地图开发者平台申请的密钥 详见 http://lbsyun.baidu.com/apiconsole/key */
   ak: 't0B9AViBfnjqLwFubP8l7RlinAE8bv0u'
 })
+Vue.use(CKEditor)
 
 new Vue({
   router,

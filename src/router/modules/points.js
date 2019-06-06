@@ -13,8 +13,8 @@ export default {
     { path: 'maps', name: `${pre}maps`, component: () => import('@/pages/points/maps'), meta: { meta, title: '百度地图' } },
     { path: 'table-bg', name: `${pre}table-bg`, component: () => import('@/pages/points/table-bg'), meta: { meta, title: '行选背景' } },
     { path: 'rich-text', name: `${pre}rich-text`, component: () => import('@/pages/points/rich-text'), meta: { meta, title: '富文本' } },
-    { path: 'dynamic-array', name: `${pre}dynamic-array`, component: () => import('@/pages/points/dynamic-array'), meta: { meta, title: '动态数组' } }
-
+    { path: 'dynamic-array', name: `${pre}dynamic-array`, component: () => import('@/pages/points/dynamic-array'), meta: { meta, title: '动态数组' } },
+    { path: 'ck-editor', name: `${pre}ck-editor`, component: () => import('@/pages/points/ck-editor'), meta: { meta, title: 'CKEditor' } }
   ])('points-')
   // ('points-') 可修改为 ()
 }

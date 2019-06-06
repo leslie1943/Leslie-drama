@@ -50,7 +50,8 @@ export default {
         data: formData
       }).then((response) => {
         let { result } = response.data
-        let url = domain.prefix + result[0].url
+        // let url = domain.prefix + result[0].url
+        let url = result[0].url
         Editor.insertEmbed(cursorLocation, 'image', url)
         resetUploader()
       }).catch((err) => {

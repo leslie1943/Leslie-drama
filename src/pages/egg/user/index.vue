@@ -9,6 +9,10 @@
       <el-col :span="4">
         <el-button size="small" @click="handleShowCreate" type="primary">Show create</el-button>
       </el-col>
+
+      <el-col :span="4">
+        <el-button size="small" @click="listMenus" type="primary">Show menu</el-button>
+      </el-col>
     </el-row>
     <div class="egg-user-container">
       <!-- Create -->
@@ -224,6 +228,11 @@ export default {
           this.dialogVisible = false
           this.$message.error(res.result.errmsg)
         }
+      })
+    },
+    listMenus () {
+      this.$store.dispatch('egg/menu/list').then(res => {
+        console.info(res)
       })
     }
   },

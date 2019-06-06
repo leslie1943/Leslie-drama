@@ -39,14 +39,16 @@ export default [
       { path: '/points/maps', icon: 'map-o', title: '百度地图' },
       { path: '/points/table-bg', icon: 'table', title: '行选背景' },
       { path: '/points/rich-text', icon: 'list', title: '富文本' },
-      { path: '/points/dynamic-array', icon: 'list', title: '动态数组' }
+      { path: '/points/dynamic-array', icon: 'list', title: '动态数组' },
+      { path: '/points/ck-editor', icon: 'list', title: 'CKEditor' }
     ]
   },
   {
     title: 'EGG',
     icon: 'arrows',
     children: [
-      { path: '/egg/user', icon: 'filter', title: '用户列表' }
+      { path: '/egg/user', icon: 'filter', title: '用户列表' },
+      { path: '/egg/menu', icon: 'filter', title: '菜单权限' }
     ]
   }
 ]
