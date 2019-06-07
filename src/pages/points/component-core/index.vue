@@ -1,6 +1,25 @@
 <template>
   <d2-container>
     <template slot="header"></template>
+    <el-row class="router-link">
+      <el-col :span="6">
+        <router-link :to="{name:'router-link',params:{id:1943,title:'Leslie.'}}">
+          <el-button type="primary">name and params</el-button>
+        </router-link>
+      </el-col>
+      <el-col :span="6">
+        <router-link :to="{path:'/pure-link',query:{id:1943,title:'Leslie.'}}">
+          <el-button type="primary">path and query</el-button>
+        </router-link>
+      </el-col>
+
+      <el-col :span="6">
+        <router-link :to="{path:'/pure-link',params:{id:1943,title:'Leslie.'}}">
+          <el-button plain type="danger">path and Params(wrong demo)</el-button>
+        </router-link>
+      </el-col>
+    </el-row>
+
     <div class="first">
       <el-form>
         <el-form-item label="父组件msg:">{{msg}}</el-form-item>
@@ -122,8 +141,13 @@ export default {
 </script>
 <style lang="scss">
 .first {
+  margin-top: 20px;
   padding: 20px;
   border: 1px solid gray;
   text-align: left;
+}
+.router-link {
+  padding: 20px;
+  border: 1px solid gray;
 }
 </style>

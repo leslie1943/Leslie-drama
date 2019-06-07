@@ -47,6 +47,24 @@ const frameIn = [
           },
           render: h => h()
         }
+      },
+      {
+        path: '/router-link/:id/:title',
+        hidden: true,
+        name: 'router-link',
+        component: () => import('@/pages/points/router-link/index'),
+        meta: {
+          isback: true
+        }
+      },
+      {
+        path: '/pure-link',
+        hidden: true,
+        name: 'pure-link',
+        component: () => import('@/pages/points/router-link/index'),
+        meta: {
+          isback: true
+        }
       }
     ]
   },
