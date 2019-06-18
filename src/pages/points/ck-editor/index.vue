@@ -37,7 +37,8 @@ class MyUploadAdapter {
         data,
         headers: {
           'Authorization': domain.auth,
-          'X-Trace-ID': getUUId()
+          'X-Trace-ID': getUUId(),
+          'Access-Control-Allow-Origin': '*'
         }
         // withCredentials: true // 此处可删掉，没发现有什么用
       }).then((res) => {

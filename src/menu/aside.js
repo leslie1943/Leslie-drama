@@ -41,7 +41,8 @@ export default [
       { path: '/points/rich-text', icon: 'list', title: '富文本' },
       { path: '/points/dynamic-array', icon: 'th-list', title: '动态数组' },
       { path: '/points/ck-editor', icon: 'file-text-o', title: 'CKEditor' },
-      { path: '/points/component-core', icon: 'cogs', title: 'Vue组件核心' }
+      { path: '/points/component-core', icon: 'cogs', title: 'Vue组件核心' },
+      { path: '/points/dynamic-form', icon: 'cogs', title: '动态表单' }
     ]
   },
   {
