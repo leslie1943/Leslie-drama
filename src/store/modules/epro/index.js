@@ -5,13 +5,9 @@
  */
 
 const files = require.context('./modules', false, /\.js$/)
-console.log('files:', files)
 const modules = {}
 
 files.keys().forEach(key => {
-  console.info('files(key)', files(key))
-  console.info('key', key) // key ./user.js
-
   modules[key.replace(/(\.\/|\.js)/g, '')] = files(key).default
   /**
    * modules[name] = {

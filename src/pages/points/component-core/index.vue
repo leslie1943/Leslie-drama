@@ -100,6 +100,35 @@
         </newSlot>
       </el-row>
     </div>
+    <el-divider>DEMO Vuex get</el-divider>
+    <el-divider>DEMO Vuex get</el-divider>
+    <el-divider>DEMO Vuex get</el-divider>
+    <div style="background:#000000;color:#67C23A">
+      <pre>
+      /* eslint-disable */
+
+      export default {
+        namespaced: true,
+        state: {
+          permissions: [],
+          // readOnly state, the value according to permissions' value
+          get permittedPath() {
+            return this.permissions
+          },
+        },
+        mutations: {
+          SET_PERMISSIONS: (state, permissions) => {
+            state.permissions = permissions
+          }
+        },
+        actions: {
+          change({ state, dispatch, commit }, data) {
+            commit('SET_PERMISSIONS', data)
+          }
+        }
+      }
+      </pre>
+    </div>
     <template slot="footer"></template>
   </d2-container>
 </template>
@@ -136,6 +165,11 @@ export default {
       this.listData.push(this.info)
       this.info = ''
     }
+  },
+  mounted () {
+    console.info('---- INIT: this.$store.state.epro ---', this.$store.state.epro.path)
+    this.$store.dispatch('epro/path/change', ['/pathA', 'pathB'])
+    console.info('---- CHANGE: this.$store.state.epro ---', this.$store.state.epro.path)
   }
 }
 </script>
