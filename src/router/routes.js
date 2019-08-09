@@ -95,7 +95,7 @@ const errorPage = [
   {
     path: '*',
     name: '404',
-    component: () => import('@/pages/error-page-404')
+    component: () => import('@/pages/404')
   }
 ]
 

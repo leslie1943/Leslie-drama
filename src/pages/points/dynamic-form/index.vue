@@ -93,27 +93,27 @@
       </el-form>
     </div>-->
     <div>
-      <el-popover placement="top-start" title="采购单进度" width="200" trigger="click">
-        <slot name="content">
-          <el-timeline>
-            <el-timeline-item
-              v-for="(activity, index) in activities"
-              :key="index"
-              :icon="activity.icon"
-              :type="activity.type"
-              :color="activity.color"
-              :size="activity.size"
-              :timestamp="activity.timestamp"
-            >
-              <div>{{activity.content}}</div>
-              <div v-if="activity.reason">
-                <span style="font-size:12px;color:#939393;">{{activity.reason}}</span>
-              </div>
-            </el-timeline-item>
-          </el-timeline>
-        </slot>
+      <!-- <el-popover placement="top-start" title="采购单进度" width="200" trigger="click">
+      <slot name="content">-->
+      <el-timeline>
+        <el-timeline-item
+          v-for="(activity, index) in activities"
+          :key="index"
+          :icon="activity.icon"
+          :type="activity.type"
+          :color="activity.color"
+          :size="activity.size"
+          :timestamp="activity.timestamp"
+        >
+          <div>{{activity.content}}</div>
+          <div v-if="activity.reason">
+            <span style="font-size:12px;color:#939393;">{{activity.reason}}</span>
+          </div>
+        </el-timeline-item>
+      </el-timeline>
+      <!-- </slot>
         <el-button slot="reference">{{activities[0].content}}</el-button>
-      </el-popover>
+      </el-popover>-->
     </div>
     <template slot="footer"></template>
   </d2-container>
@@ -237,7 +237,7 @@ export default {
 <style lang="scss">
 .el-timeline {
   padding: 10px;
-  overflow-y: scroll;
-  max-height: 356px;
+  // overflow-y: scroll;
+  // max-height: 356px;
 }
 </style>
