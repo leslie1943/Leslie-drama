@@ -16,7 +16,9 @@ export default {
     { path: 'dynamic-array', name: `${pre}dynamic-array`, component: () => import('@/pages/points/dynamic-array'), meta: { meta, title: '动态数组' } },
     { path: 'ck-editor', name: `${pre}ck-editor`, component: () => import('@/pages/points/ck-editor'), meta: { meta, title: 'CKEditor' } },
     { path: 'component-core', name: `${pre}component-core`, component: () => import('@/pages/points/component-core'), meta: { meta, title: 'Vue组件核心' } },
-    { path: 'dynamic-form', name: `${pre}dynamic-form`, component: () => import('@/pages/points/dynamic-form'), meta: { meta, title: '动态表单' } }
+    { path: 'dynamic-form', name: `${pre}dynamic-form`, component: () => import('@/pages/points/dynamic-form'), meta: { meta, title: '动态表单' } },
+    { path: 'dynamic-template', name: `${pre}dynamic-template`, component: () => import('@/pages/points/dynamic-template'), meta: { meta, title: '动态模板' } }
+
   ])('points-')
   // ('points-') 可修改为 ()
 }

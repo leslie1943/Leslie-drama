@@ -20,6 +20,14 @@ module.exports = {
     },
   },
   configureWebpack: config => {
+    // 直接渲染template
+    // config.resolve = {
+    //   extensions: ['.js', '.vue', '.json', ".css"],
+    //   alias: {
+    //     'vue$': 'vue/dist/vue.esm.js',
+    //     '@': resolve('src'),
+    //   }
+    // }
     if (process.env.NODE_ENV === 'production') {
       // 为生产环境修改配置..
       console.info('I am in production')

@@ -168,7 +168,7 @@ export default {
   },
   mounted () {
     console.info('---- INIT: this.$store.state.epro ---', this.$store.state.epro.path)
-    this.$store.dispatch('epro/path/change', ['/pathA', 'pathB'])
+    this.$store.dispatch('epro/path/change', ['/pathA', '/pathB'])
     console.info('---- CHANGE: this.$store.state.epro ---', this.$store.state.epro.path)
   }
 }
