@@ -51,7 +51,8 @@ export default [
     icon: 'arrows',
     children: [
       { path: '/egg/user', icon: 'filter', title: '用户列表' },
-      { path: '/egg/menu', icon: 'filter', title: '菜单权限' }
+      { path: '/egg/menu', icon: 'street-view', title: '菜单权限' },
+      { path: '/egg/restful', icon: 'hand-o-right', title: 'Restful' }
     ]
   }
 ]
