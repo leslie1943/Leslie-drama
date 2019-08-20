@@ -1,6 +1,5 @@
 <template>
   <div class="ann-detail">
-    <!-- currentAnnComponent:{{currentAnnComponent}} -->
     <component v-bind:is="currentAnnComponent"></component>
     <div>
       <el-button style="margin-top:20px;" @click="refresh" type="primary">Refresh</el-button>
