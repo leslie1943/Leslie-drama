@@ -7,7 +7,7 @@
 
     <el-divider></el-divider>
     <div>
-      <el-button @click="handleCreate">call /posts ---【post】 🚀 create() 🚀</el-button>
+      <el-button @click="handleCreate">call /posts ---【post】 🚀 create() 🚀</el-button>with rules
     </div>
 
     <el-divider></el-divider>
@@ -55,7 +55,11 @@ export default {
     },
     handleCreate () {
       this.$store.dispatch('egg/restful/create').then(res => {
-        this.$message.success('【url: /posts  - post】 : ' + res)
+        if (res.status === 1) {
+          this.$message.success('【url: /posts  - post】 : ' + res.msg)
+        } else {
+          this.$message.error('【url: /posts  - post】 : ' + res.msg)
+        }
       })
     },
 

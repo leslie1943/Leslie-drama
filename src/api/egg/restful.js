@@ -13,7 +13,7 @@ const postService = {
     return request({
       method: 'post',
       url: '/posts',
-      data: { name: 'suzhen' }
+      data: { name: 'suzhen', password: '123456', repassword: '1234' }
     })
   },
 

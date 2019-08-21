@@ -42,7 +42,6 @@
       <el-row>
         <el-button type="primary" size="small" @click="handleSearch">Get user</el-button>
         <div class="split-section"></div>
-        {{userList.length}}
         <el-table :data="userList">
           <el-table-column prop="_id" label="_id"></el-table-column>
           <el-table-column prop="name" label="name"></el-table-column>
@@ -50,8 +49,8 @@
           <el-table-column label="action">
             <template slot-scope="scope">
               <span>
-                <el-button type="danger" @click="handleDelete(scope.row)">Delete</el-button>
-                <el-button type="primary" plain @click="handleUpdate(scope.row)">Update</el-button>
+                <el-button size="mini" type="primary" plain @click="handleUpdate(scope.row)">Modify</el-button>
+                <el-button size="mini" type="danger" @click="handleDelete(scope.row)">Delete</el-button>
               </span>
             </template>
           </el-table-column>
@@ -89,7 +88,7 @@
         <el-form
           :model="login"
           ref="loginRef"
-          label-width="80px"
+          label-width="90px"
           :rules="loginRules"
           label-position="left"
         >
@@ -104,7 +103,7 @@
             </el-form-item>
           </el-row>
           <el-row style="text-align:center;">
-            <el-button @click="handleLogin" type="primary">Try login</el-button>
+            <el-button @click="handleLogin" type="primary">Login</el-button>
           </el-row>
         </el-form>
       </el-row>
@@ -163,9 +162,10 @@ export default {
       this.$refs.loginRef.validate((valid) => {
         if (valid) {
           this.$store.dispatch('egg/user/loginUser', this.login).then(res => {
-            // console.info(res)
             if (res.success) {
               this.$message.success('登录成功!')
+              this.loginVisible = false
+              this.handleSearch()
             } else {
               this.$message.error('登录失败,请检查账号和密码!')
             }
@@ -176,8 +176,6 @@ export default {
     handleSearch () {
       this.loading = true
       this.$store.dispatch('egg/user/load').then(res => {
-        // console.info('res')
-        // console.info(res)
         this.userList = res
         this.loading = false
       })
@@ -185,10 +183,9 @@ export default {
     handleCreate () {
       this.loading = true
       this.$store.dispatch('egg/user/createUser', this.user).then(res => {
-        // console.info('res in vue')
-        // console.info(res)
         if (res.success) {
           this.$message.success('创建成功!')
+          this.createVisible = false
           this.handleSearch()
         } else {
           this.$message.error(res.result.errmsg)
@@ -197,7 +194,6 @@ export default {
       })
     },
     handleDelete (data) {
-      // console.info(data)
       this.loading = true
       this.$store.dispatch('egg/user/deleteUser', data).then(res => {
         if (res.success) {
