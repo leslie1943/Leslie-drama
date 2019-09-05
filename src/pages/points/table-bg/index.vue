@@ -7,6 +7,26 @@
         <el-table-column prop="date" label="日期"></el-table-column>
         <el-table-column prop="name" label="姓名"></el-table-column>
         <el-table-column prop="address" label="地址"></el-table-column>
+        <el-table-column>
+          <template slot-scope="scope">
+            <span v-if="scope.$index!=0">
+              <el-button
+                style="font-size:20px;"
+                @click="handleMoveTop(scope.row,scope.$index)"
+                type="text"
+                icon="el-icon-caret-top"
+              ></el-button>
+            </span>
+            <span v-if="scope.$index!=tableData.length-1">
+              <el-button
+                style="font-size:20px;"
+                @click="handleMoveDown(scope.row,scope.$index)"
+                type="text"
+                icon="el-icon-caret-bottom"
+              ></el-button>
+            </span>
+          </template>
+        </el-table-column>
       </el-table>
     </div>
     <div class="with-merge-table">
@@ -22,14 +42,14 @@
     <div class="desc-section">
       <h2>
         查看css的时候,
-        <br>
-        <br>1:先选中目标元素,
-        <br>
-        <br>2:然后再勾选:hover/:active
-        <br>
-        <br>3:再点击其下的td查看
-        <br>
-        <br>4:有时候也可能动态出现
+        <br />
+        <br />1:先选中目标元素,
+        <br />
+        <br />2:然后再勾选:hover/:active
+        <br />
+        <br />3:再点击其下的td查看
+        <br />
+        <br />4:有时候也可能动态出现
       </h2>
     </div>
 
@@ -86,6 +106,12 @@ export default {
           }
         }
       }
+    },
+    handleMoveTop (row, index) {
+      this.tableData[index] = this.tableData.splice(index - 1, 1, this.tableData[index])[0]
+    },
+    handleMoveDown (row, index) {
+      this.tableData[index] = this.tableData.splice(index + 1, 1, this.tableData[index])[0]
     }
   },
   mounted () {

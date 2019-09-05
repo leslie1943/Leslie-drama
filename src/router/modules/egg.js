@@ -12,7 +12,9 @@ export default {
   children: (pre => [
     { path: 'user', name: `${pre}user`, component: () => import('@/pages/egg/user'), meta: { meta, title: '人员API' } },
     { path: 'menu', name: `${pre}menu`, component: () => import('@/pages/egg/menu'), meta: { meta, title: '菜单权限' } },
-    { path: 'restful', name: `${pre}restful`, component: () => import('@/pages/egg/restful'), meta: { meta, title: 'Restful' } }
+    { path: 'restful', name: `${pre}restful`, component: () => import('@/pages/egg/restful'), meta: { meta, title: 'Restful' } },
+    { path: 'redirect', name: `${pre}redirect`, component: () => import('@/pages/egg/redirect'), meta: { meta, title: 'Redirect' } }
+
   ])('egg-')
   // ('drama-') 可修改为 ()
 }
