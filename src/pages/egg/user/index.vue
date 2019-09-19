@@ -188,7 +188,7 @@ export default {
           this.createVisible = false
           this.handleSearch()
         } else {
-          this.$message.error(res.result.errmsg)
+          this.$message.error(res.msg)
         }
         this.loading = false
       })
@@ -200,7 +200,7 @@ export default {
           this.$message.success('删除成功!')
           this.handleSearch()
         } else {
-          this.$message.error(res.result.errmsg)
+          this.$message.error(res.result.msg)
         }
       })
     },
@@ -222,7 +222,7 @@ export default {
           this.handleSearch()
         } else {
           this.dialogVisible = false
-          this.$message.error(res.result.errmsg)
+          this.$message.error(res.result.msg)
         }
       })
     },
