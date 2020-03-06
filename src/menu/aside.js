@@ -43,7 +43,12 @@ export default [
       { path: '/points/ck-editor', icon: 'file-text-o', title: 'CKEditor' },
       { path: '/points/component-core', icon: 'cogs', title: 'Vue组件核心' },
       { path: '/points/dynamic-form', icon: 'cogs', title: '动态表单' },
-      { path: '/points/dynamic-template', icon: 'cogs', title: '动态模板' }
+      { path: '/points/dynamic-template', icon: 'cogs', title: '动态模板' },
+      { path: '/points/list-content', icon: 'cogs', title: '列表详情' },
+      { path: '/points/vue3', icon: 'cogs', title: 'Vue3.0' },
+      { path: '/points/scroll', icon: 'cogs', title: 'Scroll' },
+      { path: '/points/chart', icon: 'cogs', title: 'Chart' },
+      { path: '/points/provide', icon: 'cogs', title: 'Provide/Inject' }
     ]
   },
   {
@@ -54,6 +59,13 @@ export default [
       { path: '/egg/menu', icon: 'street-view', title: '菜单权限' },
       { path: '/egg/restful', icon: 'hand-o-right', title: 'Restful' },
       { path: '/egg/redirect', icon: 'share', title: 'Redirect' }
+    ]
+  },
+  {
+    title: 'XML',
+    icon: 'arrows',
+    children: [
+      { path: '/xml/go', icon: 'filter', title: 'Go' }
     ]
   }
 ]

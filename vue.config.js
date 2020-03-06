@@ -11,13 +11,13 @@ module.exports = {
     publicPath: baseUrl, // 和 baseUrl 保持一致
     proxy: {
       '/api': {
-        target: 'http://localhost:7001/api',  //目标接口域名, EGG server
+        target: 'http://localhost:7001/api', // 目标接口域名, EGG server
         changeOrigin: true, // 是否跨域
         pathRewrite: {
           '^/api': '' // 重写接口,如果没有这行代码,请求变为: http://localhost:2714/api/api/
         }
       }
-    },
+    }
   },
   configureWebpack: config => {
     // 直接渲染template

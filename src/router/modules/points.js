@@ -17,7 +17,12 @@ export default {
     { path: 'ck-editor', name: `${pre}ck-editor`, component: () => import('@/pages/points/ck-editor'), meta: { meta, title: 'CKEditor' } },
     { path: 'component-core', name: `${pre}component-core`, component: () => import('@/pages/points/component-core'), meta: { meta, title: 'Vue组件核心' } },
     { path: 'dynamic-form', name: `${pre}dynamic-form`, component: () => import('@/pages/points/dynamic-form'), meta: { meta, title: '动态表单' } },
-    { path: 'dynamic-template', name: `${pre}dynamic-template`, component: () => import('@/pages/points/dynamic-template'), meta: { meta, title: '动态模板' } }
+    { path: 'dynamic-template', name: `${pre}dynamic-template`, component: () => import('@/pages/points/dynamic-template'), meta: { meta, title: '动态模板' } },
+    { path: 'list-content', name: `${pre}list-content`, component: () => import('@/pages/points/list-content'), meta: { meta, title: '列表详情' } },
+    { path: 'vue3', name: `${pre}vue3`, component: () => import('@/pages/points/vue3'), meta: { meta, title: 'Vue3.0' } },
+    { path: 'scroll', name: `${pre}scroll`, component: () => import('@/pages/points/scroll'), meta: { meta, title: 'Scroll' } },
+    { path: 'chart', name: `${pre}scroll`, component: () => import('@/pages/points/chart'), meta: { meta, title: 'Chart' } },
+    { path: 'provide', name: `${pre}provide`, component: () => import('@/pages/points/provide'), meta: { meta, title: 'Provide/Inject' } }
 
   ])('points-')
   // ('points-') 可修改为 ()

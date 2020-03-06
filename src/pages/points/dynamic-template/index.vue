@@ -1,22 +1,28 @@
 <template>
-  <div class="ann-detail">
-    <component v-bind:is="currentAnnComponent"></component>
-    <div>
-      <el-button style="margin-top:20px;" @click="refresh" type="primary">Refresh</el-button>
+  <div>
+    <div class="ann-detail">
+      <my-component></my-component>
+      <div>
+        <el-button style="margin-top:20px;" @click="refresh" type="primary">Refresh</el-button>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import hxDetail from './components/left'
-import gyDetail from './components/right'
+// import hxDetail from './components/left'
+// import gyDetail from './components/right'
 
 export default {
-  components: { hxDetail, gyDetail },
+  components: {
+    'my-component': () => import('./components/left')
+  },
   data: function () {
     return {
       templates: ['hx', 'gy'],
-      randomNum: 0
+      randomNum: 0,
+      showDialog: false,
+      expandKeys: []
     }
   },
   methods: {
@@ -25,9 +31,9 @@ export default {
     }
   },
   computed: {
-    currentAnnComponent: function () {
-      return this.templates[this.randomNum] + 'Detail'
-    }
+    // currentAnnComponent: function () {
+    //   return this.templates[this.randomNum] + 'Detail'
+    // },
   }
 }
 </script>
@@ -38,5 +44,8 @@ export default {
   height: 1000px;
   background-color: #ffff;
   text-align: center;
+}
+.el-table__expand-icon {
+  height: 0px;
 }
 </style>

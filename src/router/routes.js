@@ -2,6 +2,7 @@ import demo from './modules/demo'
 import drama from './modules/drama'
 import points from './modules/points'
 import egg from './modules/egg'
+import xml from './modules/xml'
 
 import layoutHeaderAside from '@/layout/header-aside'
 
@@ -72,7 +73,8 @@ const frameIn = [
   demo,
   drama,
   points,
-  egg
+  egg,
+  xml
 ]
 
 /**
