@@ -6,6 +6,8 @@ import Vue from 'vue'
 import App from './App'
 // store
 import store from '@/store/index'
+// // import mobx from '@/mobx/index'
+
 // 模拟数据
 import '@/mock'
 // 多国语
@@ -54,6 +56,7 @@ Vue.use(ViserVue)
 new Vue({
   router,
   store,
+  // mobx,
   i18n,
   render: h => h(App),
   created() {

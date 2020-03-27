@@ -21,9 +21,10 @@ export default {
     { path: 'list-content', name: `${pre}list-content`, component: () => import('@/pages/points/list-content'), meta: { meta, title: '列表详情' } },
     { path: 'vue3', name: `${pre}vue3`, component: () => import('@/pages/points/vue3'), meta: { meta, title: 'Vue3.0' } },
     { path: 'scroll', name: `${pre}scroll`, component: () => import('@/pages/points/scroll'), meta: { meta, title: 'Scroll' } },
-    { path: 'chart', name: `${pre}scroll`, component: () => import('@/pages/points/chart'), meta: { meta, title: 'Chart' } },
-    { path: 'provide', name: `${pre}provide`, component: () => import('@/pages/points/provide'), meta: { meta, title: 'Provide/Inject' } }
-
+    { path: 'chart', name: `${pre}chart`, component: () => import('@/pages/points/chart'), meta: { meta, title: 'Chart' } },
+    { path: 'provide', name: `${pre}provide`, component: () => import('@/pages/points/provide'), meta: { meta, title: 'Provide/Inject' } },
+    { path: 'jsx', name: `${pre}jsx`, component: () => import('@/pages/points/jsx'), meta: { meta, title: 'JSX' } },
+    { path: 'mobx', name: `${pre}AsyncComp`, component: () => import('@/pages/points/mobx'), meta: { meta, title: 'AsyncComp' } }
   ])('points-')
   // ('points-') 可修改为 ()
 }

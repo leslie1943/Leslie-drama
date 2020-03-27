@@ -48,7 +48,9 @@ export default [
       { path: '/points/vue3', icon: 'cogs', title: 'Vue3.0' },
       { path: '/points/scroll', icon: 'cogs', title: 'Scroll' },
       { path: '/points/chart', icon: 'cogs', title: 'Chart' },
-      { path: '/points/provide', icon: 'cogs', title: 'Provide/Inject' }
+      { path: '/points/provide', icon: 'cogs', title: 'Provide/Inject' },
+      { path: '/points/jsx', icon: 'cogs', title: 'JSX' },
+      { path: '/points/mobx', icon: 'cogs', title: 'AsyncComp' }
     ]
   },
   {
