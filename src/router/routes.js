@@ -2,7 +2,7 @@ import demo from './modules/demo'
 import drama from './modules/drama'
 import points from './modules/points'
 import egg from './modules/egg'
-import xml from './modules/xml'
+import vue from './modules/vue'
 
 import layoutHeaderAside from '@/layout/header-aside'
 
@@ -74,7 +74,7 @@ const frameIn = [
   drama,
   points,
   egg,
-  xml
+  vue
 ]
 
 /**

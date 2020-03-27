@@ -50,7 +50,7 @@ export default [
       { path: '/points/chart', icon: 'cogs', title: 'Chart' },
       { path: '/points/provide', icon: 'cogs', title: 'Provide/Inject' },
       { path: '/points/jsx', icon: 'cogs', title: 'JSX' },
-      { path: '/points/mobx', icon: 'cogs', title: 'AsyncComp' }
+      { path: '/points/complex', icon: 'cogs', title: 'complex' }
     ]
   },
   {
@@ -64,10 +64,12 @@ export default [
     ]
   },
   {
-    title: 'XML',
+    title: 'VUE',
     icon: 'arrows',
     children: [
-      { path: '/xml/go', icon: 'filter', title: 'Go' }
+      { path: '/vue/slot', icon: 'filter', title: 'Vue-slot' },
+      { path: '/vue/slot-layout', icon: 'filter', title: 'Vue-slot-layout' },
+      { path: '/vue/slot-context', icon: 'filter', title: 'Vue-slot-context' }
     ]
   }
 ]

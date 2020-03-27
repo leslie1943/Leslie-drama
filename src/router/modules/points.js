@@ -24,7 +24,7 @@ export default {
     { path: 'chart', name: `${pre}chart`, component: () => import('@/pages/points/chart'), meta: { meta, title: 'Chart' } },
     { path: 'provide', name: `${pre}provide`, component: () => import('@/pages/points/provide'), meta: { meta, title: 'Provide/Inject' } },
     { path: 'jsx', name: `${pre}jsx`, component: () => import('@/pages/points/jsx'), meta: { meta, title: 'JSX' } },
-    { path: 'mobx', name: `${pre}AsyncComp`, component: () => import('@/pages/points/mobx'), meta: { meta, title: 'AsyncComp' } }
+    { path: 'complex', name: `${pre}complex`, component: () => import('@/pages/points/complex'), meta: { meta, title: 'complex' } }
   ])('points-')
   // ('points-') 可修改为 ()
 }
