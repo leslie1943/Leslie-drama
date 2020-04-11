@@ -6,6 +6,7 @@
     <template-inline inline-template>
       <!-- 🚀只能有一个根元素 -->
       <div>
+        <!-- sss -->
         <div>{{msg}}</div>
         <!-- ❌❌ 无法使用父组件data ❌❌ -->
         <div>{{name}}</div>
