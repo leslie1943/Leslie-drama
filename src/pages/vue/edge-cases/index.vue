@@ -5,6 +5,7 @@
     <child-comp ref="childDemo"></child-comp>
     <template-inline inline-template>
       <!-- 🚀只能有一个根元素 -->
+      <!-- 哈哈 -->
       <div>
         <!-- sss -->
         <!-- sssgi -->
