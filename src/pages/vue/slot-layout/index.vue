@@ -1,10 +1,11 @@
 <template>
   <div class="slot-base-layout">
     <base-layout>
-      <!-- 方式: v-slot 可渲染 -->
-      <template v-slot:header>
-        <h1>I am custom header by v-slot:header</h1>
+      <!-- 方式: #name 可渲染 -->
+      <template #header>
+        <h1>I am custom header by #header</h1>
       </template>
+      <!-- 方式: v-slot:name 可渲染 -->
       <template v-slot:default>
         <h2>I am custom main content.</h2>
         <h2>I am custom another main content.</h2>

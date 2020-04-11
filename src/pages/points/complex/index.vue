@@ -1,15 +1,15 @@
 <template>
   <div>
-    <div style="text-align:center;margin:20px;">
+    <div style="text-align:center;margin:10px;">
       <el-tag>此页面演示了delete和$this.delete的区别</el-tag>
       <el-tag type="success">此页面演示了异步组件</el-tag>
       <el-tag type="info">此页面演示了组件绑定v-model</el-tag>
       <el-tag type="warning">此页面演示了组件属性.sync修饰符</el-tag>
     </div>
-    <div style="padding:20px;">
+    <div style="padding:10px;text-align:center;">
       <div>use delete change a: {{a}}</div>
       <div>use this.$delete change b: {{b}}</div>
-      <el-button @click="handleChange">Do</el-button>
+      <el-button size="mini" @click="handleChange">Do</el-button>
     </div>
     <el-divider></el-divider>
     <div style="margin:20px;display:flex;align-items:center;">
@@ -21,7 +21,7 @@
     </div>
     <el-divider></el-divider>
     <div style="text-align:center">
-      <el-button type="primary" @click="toggle">加载</el-button>
+      <el-button size="mini" type="primary" @click="toggle">加载</el-button>
     </div>
   </div>
 </template>

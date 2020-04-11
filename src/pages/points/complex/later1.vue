@@ -2,7 +2,7 @@
   <div>
     <div class="box-later-1">load me later 1</div>
     <div class="box-later-1">prop msg is: {{msg}}</div>
-    <el-button type="danger" v-on:click="handleClick">change</el-button>
+    <el-button size="mini" type="danger" v-on:click="handleClick">change</el-button>
   </div>
 </template>
 <script>

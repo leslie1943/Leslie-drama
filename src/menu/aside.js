@@ -69,7 +69,8 @@ export default [
     children: [
       { path: '/vue/slot', icon: 'filter', title: 'Vue-slot' },
       { path: '/vue/slot-layout', icon: 'filter', title: 'Vue-slot-layout' },
-      { path: '/vue/slot-context', icon: 'filter', title: 'Vue-slot-context' }
+      { path: '/vue/slot-context', icon: 'filter', title: 'Vue-slot-context' },
+      { path: '/vue/edge-cases', icon: 'filter', title: 'Vue-edge-cases' }
     ]
   }
 ]

@@ -15,6 +15,9 @@ export default {
       titleObj: { name: 'leslie', love: 'javascript' },
       otherObj: { company: 'vh', id: 'VH001667' },
     }
+  },
+  mounted() {
+    console.info('this.$parent', this.$parent)
   }
 }
 </script>
