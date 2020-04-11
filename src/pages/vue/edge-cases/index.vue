@@ -5,10 +5,8 @@
     <child-comp ref="childDemo"></child-comp>
     <template-inline inline-template>
       <!-- 🚀只能有一个根元素 -->
-      <!-- 哈哈 -->
+      <!-- 我在王岩的分支上写了注释 -->
       <div>
-        <!-- sss -->
-        <!-- sssgi -->
         <div>{{msg}}</div>
         <!-- ❌❌ 无法使用父组件data ❌❌ -->
         <div>{{name}}</div>
