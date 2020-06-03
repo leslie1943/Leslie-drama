@@ -19,6 +19,7 @@ import BaiduMap from 'vue-baidu-map'
 // Editor 插件
 import CKEditor from '@ckeditor/ckeditor5-vue';
 import formCreate, { maker } from '@form-create/element-ui'
+import VueScrollTo from 'vue-scrollto'
 
 // chart
 import ViserVue from 'viser-vue'
@@ -35,15 +36,19 @@ import 'iview/dist/styles/iview.css'
 import 'viewerjs/dist/viewer.css'
 import Viewer from 'v-viewer'
 import treeTransfer from 'el-tree-transfer' // 引入
+import VueClipboard from 'vue-clipboard2'
+
 
 import '@/filters/index.js'
 
 // 核心插件
 Vue.use(formCreate)
+Vue.directive(VueScrollTo)
 Vue.use(d2Admin)
 Vue.use(IView)
 Vue.use(Viewer)
 Vue.use(treeTransfer)
+Vue.use(VueClipboard)
 Vue.use(BaiduMap, {
   // ak 是在百度地图开发者平台申请的密钥 详见 http://lbsyun.baidu.com/apiconsole/key */
   ak: 't0B9AViBfnjqLwFubP8l7RlinAE8bv0u'

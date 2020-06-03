@@ -70,7 +70,9 @@ export default [
       { path: '/vue/slot', icon: 'filter', title: 'Vue-slot' },
       { path: '/vue/slot-layout', icon: 'filter', title: 'Vue-slot-layout' },
       { path: '/vue/slot-context', icon: 'filter', title: 'Vue-slot-context' },
-      { path: '/vue/edge-cases', icon: 'filter', title: 'Vue-edge-cases' }
+      { path: '/vue/edge-cases', icon: 'filter', title: 'Vue-edge-cases' },
+      { path: '/vue/form-creator', icon: 'filter', title: 'Vue-form-creator' },
+      { path: '/vue/element-ui', icon: 'filter', title: 'Vue-element-ui' }
     ]
   }
 ]
