@@ -19,7 +19,7 @@
     "@ckeditor/ckeditor5-easy-image": "^11.0.1",
     "@ckeditor/ckeditor5-vue": "^1.0.0-beta.2",
     "@form-create/element-ui": "^1.0.9",
-    "axios": "^0.17.1",
+    "axios": "^0.21.1",
     "babel-polyfill": "^6.26.0",
     "better-scroll": "^1.12.1",
     "dayjs": "^1.6.7",
