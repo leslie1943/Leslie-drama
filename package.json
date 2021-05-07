@@ -41,7 +41,7 @@
     "pdfvuer": "^1.4.0",
     "qrcode": "^1.4.4",
     "screenfull": "^3.3.2",
-    "ua-parser-js": "^0.7.18",
+    "ua-parser-js": "^0.7.24",
     "v-viewer": "^1.4.0",
     "viser-vue": "^2.4.7",
     "vue": "^2.6.0",
